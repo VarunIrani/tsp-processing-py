@@ -44,7 +44,7 @@ class TSPGeneticAlgorithm:
         noStroke()
         fill(255)
         text("Generation: " + str(self.current_generation) + ", Stop Threshold: " + str(self.stop_threshold), 20, 40)
-        text("Record Distance: " + str(nf(self.record_distance, 0, 2)), 20, 80)
+        text("Record Distance: " + str(nf(self.record_distance, 0, 2) + ", Cities: " + str(self.total_cities)), 20, 80)
         
         
         if self.count == self.stop_threshold:
