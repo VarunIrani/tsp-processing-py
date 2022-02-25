@@ -123,7 +123,7 @@ class TSPGeneticAlgorithm:
             order_a = self.pick_one(self.population, self.fitness)
             order_b = self.pick_one(self.population, self.fitness)
             order = self.cross_over(order_a, order_b)
-            self.mutate(order, 0.01)
+            self.mutate(order, self.mutation_rate)
             new_population[i] = order
             
         self.population = new_population
